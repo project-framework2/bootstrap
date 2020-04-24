@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
 
-    <title>Bootstrap Tutorial Sample Page</title>
+    <title>FrameWork BootStrap Elyan DESMAREST</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -12,7 +12,9 @@
   </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-        <a class="navbar-brand" href="#">Framework Bootstrap</a>
+      <a class="navbar-brand" href="#">
+        <img src="pictures/ensicaen.png" alt="Logo" style="width:40px;">
+      </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,6 +29,17 @@
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="form.html">Formulaire <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Autres Frameworks
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="http://54.38.191.163:3000">Meteor</a>
+                <a class="dropdown-item" href="54.38.191.163">VueJS</a>
+                <a class="dropdown-item" href="54.38.191.163">AngularJS</a>
+                <a class="dropdown-item" href="54.38.191.163">AngularJS</a>
+              </div>
             </li>
           </ul>
           <ul class="navbar-nav navbar-right">
@@ -60,7 +73,7 @@
         </div>
       </nav> 
   
-      <form>
+      <form style="width: 50%;margin: auto;">
         <div class="form-group">
           <label for="text">Nom Prénom</label>
           <input type="text" class="form-control" id="text" placeholder="Jean Dupont" required>
@@ -87,13 +100,13 @@
           <label for="textarea">Description</label>
           <textarea class="form-control" id="textarea" rows="3"></textarea>
         </div>
+        <button type="button" class="btn btn-light" onclick="myFunction()">Try it</button>
+        <br></br>
+        <p id="write_text"></p>
+        <p id="write_select1"></p>
+        <p id="write_select2"></p>
+        <p id="write_textarea"></p>
       </form>
-      <button type="button" class="btn btn-light" onclick="myFunction()">Try it</button>
-    
-      <p id="write_text"></p>
-      <p id="write_select1"></p>
-      <p id="write_select2"></p>
-      <p id="write_textarea"></p>
       
       <script>
       function myFunction() {
